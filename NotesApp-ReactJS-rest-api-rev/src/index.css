@@ -1,0 +1,293 @@
+
+body{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.d-flex{
+  display: flex;
+}
+.d-none{
+  display: none;
+}
+.d-block{
+  display: block;
+}
+.header{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-title{
+  align-self: center;
+  font-size: 23px;
+  font-weight: bold;
+}
+.plus-icons{
+  align-self: center;
+  display: inline-block;
+  margin-right: 10px;
+  color: rgb(58, 58, 58);
+}
+.addEventButton{
+  border: none;
+  padding: 10px 20px;
+  background: #5ebb33;
+  margin-right: 5px;
+  color: white;
+}
+.toggle-mode{
+  border: none;
+  padding: 10px 20px;
+  background: #d7d7d7;
+}
+.false, .dark{
+  padding-bottom: 20px;
+}
+.dark{
+  background-color: black;
+  height: 100vh;
+}
+.dark h1, .dark .header-title, .dark h3{
+  color: white;
+}
+.alert-warning{
+  background: #fef68a;
+  width: 100%;
+  padding: 15px 25px;
+  color: #916b03;
+}
+.search-container{
+    display: flex;
+    align-items: center;
+    background: #eee;
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+.input-search{
+  border: none;
+  background: transparent;
+  width: 100%;
+}
+.input-search:focus{
+  outline: none;
+}
+.container{
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+.list-event{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.event{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fef68a;
+  padding: 25px;
+  margin-right: 10px;
+  border-radius: 10px;
+  min-height: 180px;
+  white-space: pre-wrap;
+  color: black !important;
+}
+.event-title{
+  color: black !important;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.event-date{
+  font-size: 15px;
+  font-style: italic;
+  color: rgb(73, 73, 73);
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.event-footer{
+  margin-top: 20px;
+  display: flex;
+  justify-content: right;
+}
+.btn-arsip, .btn-delete, .btn-detail{
+  background: transparent;
+  padding: 7px 10px;
+}
+.btn-detail{
+  margin-right: 5px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #eee;
+  color: rgb(17, 17, 17);
+  text-decoration: none;
+  font-size: 14px;
+}
+.btn-arsip{
+  margin-right: 5px;
+  border: 1px solid rgb(13, 168, 168);
+  color: rgb(13, 168, 168);
+}
+.btn-save{
+  margin-right: 5px;
+  border: 1px solid rgb(13, 168, 168);
+  color: rgb(13, 168, 168);
+  padding: 8px;
+}
+.btn-delete{
+  margin-right: 5px;
+  border: 1px solid rgb(255, 0, 0);
+  background: rgb(255, 32, 32);
+  color: rgb(255, 255, 255);
+}
+
+.add-event-container{
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  border-bottom: 1px solid #eee;
+}
+.add-event-item{
+  width: 65%;
+}
+.group-form{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+input[type="text"], textarea{
+  padding: 10px;
+  border-radius: 7px;
+}
+.not-found{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  color: cadetblue;
+}
+.btn-unarchived{
+  margin-right: 5px;
+  border: 1px solid rgb(13, 168, 168);
+  color: rgb(13, 168, 168);
+  padding: 8px;
+}
+.logout{
+  margin-left: 5px;
+  border: 1px solid rgb(255, 60, 60);
+  color: rgb(230, 40, 40);
+  padding: 8px;
+  background: transparent;
+}
+.btn-archived{
+  margin-right: 5px;
+  border: 1px solid rgb(233, 162, 30);
+  color: rgb(37, 37, 37);
+  padding: 8px;
+  text-decoration: none;
+}
+
+
+/* LOGIN AND REGISTER CSS */
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+/* .container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+} */
+
+.alert{
+  padding: 15px 11px;
+  font-size: 12px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.alert-danger{
+  background: #facdcd;
+  color: #6f0202;
+}
